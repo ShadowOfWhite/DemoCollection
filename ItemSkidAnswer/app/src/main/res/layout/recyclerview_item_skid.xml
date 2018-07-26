@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ch.tool.itemskid.MSkidLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+    >
+
+
+    <!--背景-->
+    <LinearLayout
+        android:id="@+id/LinearLayout_MSlideDeleteView_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background">
+
+        <TextView
+            android:id="@+id/TextView_MSlideDeleteView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/TextView_MSlideDeleteView_goUp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp"
+            android:text="置顶"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <!--前景-->
+    <LinearLayout
+        android:id="@+id/LinearLayout_MSlideDeleteView_prospect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/TextView_MSlideDeleteView_Author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/TextView_MSlideDeleteView_Dynasty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="朝代"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/TextView_MSlideDeleteView_mPoetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_MSlideDeleteView_Author"
+                android:layout_marginTop="8dp"
+                android:text="诗文"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.ch.tool.itemskid.MSkidLayout>

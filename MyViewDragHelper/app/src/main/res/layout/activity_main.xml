@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.example.asus.myviewdraghelper.MyViewGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#445566"
+            android:text="桃花依旧笑春风"
+            android:textColor="#ff6666"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#4499ff"
+            android:text="羡长江之无穷"
+            android:textColor="#66ff66"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff9966"
+            android:text="春风不改旧时波"
+            android:textColor="#ff66ff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+
+    </com.example.asus.myviewdraghelper.MyViewGroup>
+
+
