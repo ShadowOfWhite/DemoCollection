@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="crash_toast_text">发送崩溃信息了</string>
+</resources>

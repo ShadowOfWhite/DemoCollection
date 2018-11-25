@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/openBuletooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="打开蓝牙"
+                android:background="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/searchBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="搜索蓝牙"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/stopSearchBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停止搜索"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/closeBluetooth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="关闭蓝牙"
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimary"
+            />
+            <Button
+                android:id="@+id/startConnect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="查看匹配"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                />
+                <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sendData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="发送数据"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        android:layout_marginRight="10dp"
+        android:text="未收到数据"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receiveData"
+        android:layout_marginRight="10dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/devicesListRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <!--<ScrollView-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/linearLayout1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="200dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/messageText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</ScrollView>-->
+
+
+
+
+</android.support.constraint.ConstraintLayout>
